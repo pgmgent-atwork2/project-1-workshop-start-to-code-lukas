@@ -8,13 +8,16 @@
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Underground Tunez - Mijn Muziek</title>
 </head>
 <body>
-    <header>
-        <h1>Underground Tunez</h1>
-        <a href="index.html"><img src="assets/images/61ec1iuya5l (1).png" alt="Logo"></a>
+    <header class="header--library">
+        <div class="logo">
+            <h1>Underground Tunez</h1>
+            <a href="index.html"><img class="logo" src="assets/images/61ec1iuya5l (1).png" alt="Logo"></a>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,17 +27,17 @@
         </nav>
     </header>
     <main>
-        <h2>Klik op een liedje om het af te laten spelen!</h2>
+        <h2 class="gallery__title">Klik op een liedje om het af te laten spelen!</h2>
         <section class="gallery">
             <article class="gallery-item">
-                <img src="assets/images/95D7FB39-0368-48CB-A1F0-45E22E2A4F5F.jpg" alt="artist image">
+                <img class="song-image" src="assets/images/95D7FB39-0368-48CB-A1F0-45E22E2A4F5F.jpg" alt="artist image">
                 <p>lukynlean - wrist</p>
-                <audio controls>
-                    <source src="assets/audio/song but ion know a name.wav" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
+                <audio id="audio-player" src="assets/audio/song but ion know a name.wav"></audio>
+                <img class="play-button button" src="assets/images/play-button.png" alt="play">
+                <img class="pause-button button hidden" src="assets/images/rounded-pause-button.png" alt="pause">
+            </article>
         </section>
     </main>
-    <footer>All rights reserved to Lukas Vervaet</footer>   
+    <script src="js/main.js"></script>
 </body>
 </html>
