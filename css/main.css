@@ -1,0 +1,21 @@
+/* kleur variabelen */
+
+:root {
+    --dark-color: #3c2f2f
+    --light-color: #fff4e6
+    --foreground: #be9b7b
+    --border-color: #854442
+}
+
+/* inladen van fonts */
+
+@font-face {
+    font-family: 'Inter';
+    src: url(/assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+/* algemene stijlen */
+
+body {
+    font-family: Inter;
+}
