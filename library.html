@@ -27,12 +27,44 @@
         </nav>
     </header>
     <main>
-        <h2 class="gallery__title">Klik op een liedje om het af te laten spelen!</h2>
+        <h2>Voeg hier zelf een liedje toe!</h2>
+        <form id="upload-form" class="upload-form" method="post">
+            <div>
+                <label for="cover">Upload hier een cover voor je song.</label>
+                <input type="file" id="cover" name="cover" accept=".jpg, .jpeg, .png" required>
+            </div>
+            <div>
+                <label for="audio">Upload hier je audio-bestand.</label>
+                <input type="file" id="file" name="file" accept=".mp3, .wav," required>
+            </div>
+            <div>
+                <input type="text" id="title" name="title" placeholder="Titel van het nummer" required>
+            </div>
+            <div>
+                <input type="text" id="artist" name="artist" placeholder="Naam van de artiest" required>
+            </div>
+            <button type="submit" class="upload-button">Upload song</button>
+        </div>
+        </form>
+        <h2>Klik op een liedje om het af te laten spelen!</h2>
         <section class="gallery">
             <article class="gallery-item">
-                <img class="song-image" src="assets/images/95D7FB39-0368-48CB-A1F0-45E22E2A4F5F.jpg" alt="artist image">
-                <p>lukynlean - wrist</p>
+                <div class="song-cover">
+                    <img class="song-image" src="assets/images/95D7FB39-0368-48CB-A1F0-45E22E2A4F5F.jpg" alt="artist image">
+                    <p class="song-title">lukynlean - wrist</p>
+                </div>
                 <audio id="audio-player" src="assets/audio/song but ion know a name.wav"></audio>
+                <div class="audio-controls">
+                    <img class="play-button button" src="assets/images/play-button.png" alt="play">
+                    <img class="pause-button button hidden" src="assets/images/rounded-pause-button.png" alt="pause">
+                </div>
+            </article>
+            <article class="gallery-item">
+                <div class="song-cover">
+                    <img class="song-image" src="assets/images/IMG_1468.jpg" alt="artist image">
+                    <p class="song-title">lukynlean - wrist</p>
+                </div>
+                <audio id="audio-player" src="assets/audio/With_me.mp3"></audio>
                 <img class="play-button button" src="assets/images/play-button.png" alt="play">
                 <img class="pause-button button hidden" src="assets/images/rounded-pause-button.png" alt="pause">
             </article>
