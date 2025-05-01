@@ -13,11 +13,133 @@
     <title>Underground Tunez</title>
 </head>
 <body>
-    <header>
-        <h1>Underground Tunez</h1>
-        <a href="index.html"><img class="logo" src="assets/images/61ec1iuya5l (1).png" alt="Logo"></a>
+    <header class="header--library">
+        <div class="logo">
+            <h1>Underground Tunez</h1>
+            <a href="index.html"><img class="logo" src="assets/images/61ec1iuya5l (1).png" alt="Logo"></a>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="library.html">Mijn Muziek</a></li>
+                <li><a href="tutorial.html">Tutorial</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main class="tutorial">
+<section class="steps-section">
+    <h2>Volg hieronder de stappen voor de applicatie na te maken van scratch!</h2>
+    <details>
+        <summary>Stap 1: Configuratie & Mappenstructuur</summary>
+        <article>
+            <h3>Configuratie</h3>
+            <p>
+                Voor het maken van deze applicatie gaan we een code editor gebruiken,
+                in deze applicatie gebruiken we Visual Code Studio.
+                Dit is een gratis code editor die je kan downloaden via de website van Microsoft.
+            </p>
+            <p>Op basis van je operating system kan je de juiste versie downloaden op deze <a href="https://code.visualstudio.com/Download">link</a></p>
+            <p>Eens je dit gedownload zal je account moeten maken, dit kan je doen via de website van Microsoft.</p>
+            <p>Eens je een account hebt kun je het programma openen en beginnen aan je applicatie.</p>
+            <p>Voor we beginnen met code zal je eerst een extensie nodig hebben die al je wijzingen van je code visueel weergeeft op je HTML pagina.</p>
+            <div>
+                <p>Deze extensie ziet er zo uit: <img src="assets/images/image.png" alt="live server"></p>
+                <p>Als je deze extensie hebt gevonden mag je gewoon simpelweg op "install" klikken</p>
+            </div>
+            <p>Goed! Nu dat we dit hebben kunnen we beginnen met onze mappenstructuur</p>
+            <h3>Mappenstructuur</h3>
+            <p>Eens je Visual Studio Code hebt geopend kun je beginnen aan je mappenstructuur.</p>
+            <p>Maak de volgende folders aan:</p>
+            <ul>
+                <li>CSS -> Hier komen je styling bestanden</li>
+                <li>JS -> Hier komen je script bestanden</li>
+                <li>Assets -> Hier komen je afbeeldingen, audio bestanden en andere assets</li>
+                <li>Assets/images -> Hier komen je afbeeldingen</li>
+                <li>Assets/audio -> Hier komen je audio bestanden</li>
+                <li>Assets/favicon -> Hier komen je favicon</li>
+                <li>Assets/fonts -> Hier komen je lettertypes</li>
+            </ul>
+            <p>Eens deze folders zijn gemaakt kunnen we overgaan naar stap 2</p>
+        </article>
+    </details>
+    <details>
+        <summary>Stap 2: HTML</summary>
+        <article>
+            <h3>HTML</h3>
+            <div>
+                <h4>2.1</h4>
+                <p>Html is een codetaal die als basis wordt gebruikt om tekst te displayen op je web-pagina.</p>
+                <p>Html wordt "semantisch" gestructueerd, dit wil zeggen dat er een duidelijke chronologische structuur moet zitten in je elementen, (header, main-content, footer...)</p>
+                <p>Hieronder zie je een voorbeeld van hoe je html er kan uitzien: <img src="assets/images/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" alt="html code"></p>
+                <p>Om te beginnen met onze applicatie moet je eerst een html bestand hebben waarin je kunt coderen</p>
+                <p>Maak dus een nieuw bestand aan in de root (buiten alle folders) en noem dit "index.html", eens je in dit bestand zit duw dan op "!" op je toetsenbord en druk op enter</p>
+                <p>Nu zie je een basis template waar je verder op kan bouwen om je applicatie te maken.</p>
+                <p>Je kan al beginnen met je web-pagina een titel te geven, type een naam in de titel tag</p>
+            </div>
+            <div>
+                <h4>2.2</h4>
+                <p>We zullen beginnen met onze header</p>
+                <p>Je ziet een body tag, hierin komt alles dat je kunt zien op je webpagina</p>
+                <p>Maak een header tag aan en steek er volgende code in.</p>
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="LEEeqpd" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/LEEeqpd">
+                    Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </p>
+                <p>Als logo kun je een afbeelding in de assets/images folder zetten en het juiste pad hier naartoe linken in de src="" binnnen de img tag. Je kunt ook de titel van je applicatie veranderen door simpelweg te naam te veranderen in je h1 tag.</p>
+            </div>
+            <div>
+                <h4>2.3</h4>
+                <p>Nu kunnen we overgaan naar onze muziek bibliotheek.</p>
+                <p>We maken eerst een sectie aan waarin we al onze liejdes gaan insteken</p>
+                <p>Hierna gaan we per liedje een article tag gebruiken voor elk liedje apart weer te geven</p>
+                <p>Per liedje gaan we een afbeelding, audio-bestand, en naam meegeven waarin je de artiest en naam van het liedje kan vermelden</p>
+                <p>We zullen eerst een leeg article maken zonder data in, dit doe je zo in volgend code fragment.</p>
+                <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="jEEYdGr" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                    <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/jEEYdGr">
+                    Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                    <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                </p>
+                <p>Nu kun je de data vullen met eigen bestanden</p>
+                <ul>
+                    <li>Voeg mp3 of wav. bestanden toe in je assets/audio folder</li>
+                    <li>Voeg song covers toe in je assets/images folder</li>
+                    <li>Zorg ook ervoor dat je een "play" en een "pause" icoontje in je assets/images folder</li>
+                </ul>
+                <p>Voeg nu je bestanden allemaal toe in je article</p>
+                <ul>
+                    <li>Vul de src van je audio tag in met het juiste pad naar je audio bestand</li>
+                    <li>Vul de src van je song-cover in met het juiste pad naar je afbeelding</li>
+                    <li>Vul de src van je play en pause button in met het juiste pad naar je play en pause icoontjes</li>
+                    <li>Voeg de naam van de artiest en het nummer toe in de p tag bv "artiest" - "naam van liedje"</li>
+            </div>
+            <p>Je kan meerdere liedjes aanmaken in je bibliotheek door bovenstaande gewoon te copy-pasten maar dan met andere data.</p>
+            <p>Nu dat we dit hebben kunnen we overgaan naar stap 3, de styling.</p>
+        </article>
+    </details>
+    <details>
+        <summary>Stap 3: CSS</summary>
+        <article>
+            <h3>CSS</h3>
+            <p>Details for step 3...</p>
+        </article>
+    </details>
+    <details>
+        <summary>Stap 4: Javascript</summary>
+        <article>
+            <h3>Javascript</h3>
+            <p>Details for step 4...</p>
+        </article>
+    </details>
+    <details>
+        <summary>Stap 5: Server opzetten</summary>
+        <article>
+            <h3>Server opzetten</h3>
+            <p>Details for step 5...</p>
+        </article>
+    </details>
     </main>
     <script type="module" src="js/main.js"></script>
 </body>
