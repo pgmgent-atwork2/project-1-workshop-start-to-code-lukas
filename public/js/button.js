@@ -18,5 +18,3 @@ galleryItems.forEach((item) => {
     });
 });
 
-
-

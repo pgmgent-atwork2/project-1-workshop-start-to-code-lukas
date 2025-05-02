@@ -28,7 +28,7 @@
     </header>
     <main>
         <h2>Voeg hier zelf een liedje toe!</h2>
-        <form id="upload-form" class="upload-form" method="post">
+        <form id="upload-form" class="upload-form" method="post" enctype="multipart/form-data" action="http://localhost:8000/upload">
             <div>
                 <label for="cover">Upload hier een cover voor je song.</label>
                 <input type="file" id="cover" name="cover" accept=".jpg, .jpeg, .png" required>
@@ -44,7 +44,6 @@
                 <input type="text" id="artist" name="artist" placeholder="Naam van de artiest" required>
             </div>
             <button type="submit" class="upload-button">Upload song</button>
-        </div>
         </form>
         <h2>Klik op een liedje om het af te laten spelen!</h2>
         <section class="gallery">
