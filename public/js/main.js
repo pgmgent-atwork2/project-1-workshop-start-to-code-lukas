@@ -17,4 +17,3 @@ galleryItems.forEach((item) => {
         playButton.classList.remove("hidden");
     });
 });
-
