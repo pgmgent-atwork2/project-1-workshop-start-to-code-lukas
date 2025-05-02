@@ -1,8 +1,8 @@
 /* kleur variabelen */
 
 :root {
-    --dark-color: #3c2f2f;
-    --light-color: #fff4e6;
+    --dark-color: #222831;
+    --light-color: #DFD0B8;
     --foreground: #be9b7b;
     --border-color: #854442;
 }
@@ -32,14 +32,6 @@ a {
         background-color: var(--dark-color);
         color: var(--light-color);
     }
-}
-
-li {
-    list-style: none;
-}
-
-ul {
-    padding: 0;
 }
 
 input, button, select {
@@ -72,6 +64,13 @@ header {
     align-items: center;
     background-color: var(--foreground);
     color: var(--dark-color);
+    li {
+        list-style: none;
+    }
+    
+    ul {
+        padding: 0;
+    }
 }
 
 .navigation {

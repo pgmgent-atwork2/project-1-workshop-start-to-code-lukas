@@ -78,6 +78,7 @@
                     <section>
                         <p>Html is een codetaal die als basis wordt gebruikt om tekst te displayen op je web-pagina.</p>
                         <p>Html wordt "semantisch" gestructueerd, dit wil zeggen dat er een duidelijke chronologische structuur moet zitten in je elementen, (header, main-content, footer...)</p>
+                        <p>Elke codetaal heeft zijn eigen syntax om code te declareren, bij html wordt dit gedaan met "open" en "close" tags</p>
                         <figure>
                             <img src="assets/images/How-to-Code-a-Basic-Webpage-Using-HTML-Tutorial-2.jpg" alt="html code">
                             <figcaption>Voorbeeld van HTML-code</figcaption>
@@ -91,22 +92,21 @@
                     <h4>2.2</h4>
                     <section>
                         <p>We zullen beginnen met onze header, hierin komen onze hoofdelementen die meestal terugkomen op meerdere pagina's. (navigatie, titel...)</p>
-                        <p>Je ziet een body tag, hierin komt alles dat je kunt zien op je webpagina</p>
-                        <p>Maak een header tag aan en steek er volgende code in.</p>
                         <p class="codepen" data-height="300" data-default-tab="html" data-slug-hash="LEEeqpd" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
                             <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/LEEeqpd">
                             Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
                             <script async src="https://public.codepenassets.com/embed/index.js"></script>
                             on <a href="https://codepen.io">CodePen</a>.</span>
                         </p>
-                        <p>Als logo kun je een afbeelding in de assets/images folder zetten en het juiste pad hier naartoe linken in de src="" binnnen de img tag. Je kunt ook de titel van je applicatie veranderen door simpelweg te naam te veranderen in je h1 tag.</p>
+                        <p>
+                            Als logo kun je een afbeelding in de assets/images folder zetten en het juiste pad hier naartoe linken in de src="" binnnen de img tag.
+                            Je kunt ook de titel van je applicatie veranderen door simpelweg de naam te veranderen in je h1 tag.
+                        </p>
                     </section>
+                    <h4>2.3</h4>
                     <section>
-                        <header>
-                            <h4>2.3</h4>
-                        </header>
-                        <p>Nu kunnen we overgaan naar onze muziek bibliotheek.</p>
-                        <p>We maken eerst een sectie aan waarin we al onze liedjes gaan insteken</p>
+                        <p>Nu kunnen we overgaan naar onze muziek bibliotheek,
+                        <p>Maak eerst een main tag aan met een lege section in</p>
                         <p>Hierna gaan we per liedje een article tag gebruiken voor elk liedje apart weer te geven</p>
                         <p>Per liedje gaan we een afbeelding, audio-bestand, en naam meegeven waarin je de artiest en naam van het liedje kan vermelden</p>
                         <p>We zullen eerst een leeg article maken zonder data in, dit doe je zo in volgend code fragment.</p>
@@ -118,18 +118,19 @@
                         </p>
                         <p>Nu kun je de data vullen met eigen bestanden</p>
                         <ul>
-                            <li>Voeg mp3 of wav. bestanden toe in je assets/audio folder</li>
+                            <li>Voeg mp3 of wav. bestanden toe in je assets/audio folder, je kunt audio converteren van youtube naar een mp3 file <a href="https://y2mate.nu/en-iry9/">hier</a></li>
                             <li>Voeg song covers toe in je assets/images folder</li>
                             <li>Zorg ook ervoor dat je een "play" en een "pause" icoontje in je assets/images folder</li>
                         </ul>
                         <p>Voeg nu je bestanden allemaal toe in je article</p>
+                        <p>Je ziet binnen je img tag een "src", het is de bedoeling dat je hier binnen een pad verwijst naar je gewenst bestand dat je daar wilt in laden</p>
                         <ul>
                             <li>Vul de src van je audio tag in met het juiste pad naar je audio bestand</li>
                             <li>Vul de src van je song-cover in met het juiste pad naar je afbeelding</li>
                             <li>Vul de src van je play en pause button in met het juiste pad naar je play en pause icoontjes</li>
                             <li>Voeg de naam van de artiest en het nummer toe in de p tag bv "artiest" - "naam van liedje"</li>
                         </ul>
-                        <p>Je kan meerdere liedjes aanmaken in je bibliotheek door bovenstaande gewoon te copy-pasten maar dan met andere data.</p>
+                        <p>Je kan meerdere liedjes aanmaken in je bibliotheek door bovenstaande gewoon je volledige article te copy-pasten maar dan met andere data.</p>
                         <p>Nu dat we dit hebben kunnen we overgaan naar stap 3, de styling.</p>
                     </section>
                 </article>
@@ -140,7 +141,71 @@
                     <header>
                         <h3>CSS</h3>
                     </header>
-                    <p>Details for step 3...</p>
+                    <h4>3.1</h4>
+                    <section>
+                        <p>
+                            CSS is een codetaal die wordt gebruikt om de styling van je web-pagina te bepalen. 
+                            CSS kan je gebruiken om kleuren, lettertypes, groottes, en nog veel meer te bepalen.
+                        </p>
+                        <p>
+                            Om CSS toe te voegen aan je HTML bestand moet je eerst een CSS bestand aanmaken in je CSS folder, noem dit "main.css".
+                            Link vervolgens dit bestand in je HTML bestand door de volgende code toe te voegen binnen je head tag van je HTML bestand:
+                            <img src="assets/images/linkCSS.png" alt="link css">
+                        </p>
+                        <p>
+                            We gaan eerst testen of onze CSS goed is gelinkt met onze HTML,
+                            dit kun je doen door je body (volledige pagina) een achtergrondkleur te geven.
+                            Dit doe je door de volgende code toe te voegen in je main.css bestand:
+                            <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="YPPeBxj" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/YPPeBxj">
+                                Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                            </p>
+                        </p>
+                        <p>
+                            Als de achtergrondkleur blauw is geworden, is je CSS goed gelinkt.
+                        </p>
+                    </section>
+                    <h4>3.2</h4>
+                    <section>
+                        <p>
+                            We gaan werken met CSS variabelen, dit wil zeggen dat we CSS "containers"
+                            maken die we dan meermaals gebruiken voor onze worklow efficienter te maken.
+                        </p>
+                        <p>
+                            Kopieer volgende code en paste dit in je main.css bestand:
+                            <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="jEEZdZb" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                                <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/jEEZdZb">
+                                Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
+                                on <a href="https://codepen.io">CodePen</a>.</span>
+                                <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                            </p>
+                        </p>
+                        <p>
+                            Nu heb je variabelen aangemaakt met de kleuren van de applicatie, maar deze kan je zelf ook veranderen als je andere kleuren wilt gebruiken.
+                        </p>
+                        <a href="https://colorhunt.co">Hier</a> kan je allerlei kleur paletten vinden die je kunt gebruiken.
+                        <p>
+                            verander de waarden van de CSS variabelen dan door de kleuren van je gekozen kleur palet.    
+                        </p>
+                    </section>
+                    <h4>3.3</h4>
+                    <section>
+                        <p>Nu gaan we de styling toevoegen voor onze song cover</p>
+                        <p>
+                            Kopieer volgende code onder je :root code in je main.css bestand:
+                        </p>
+                        <p class="codepen" data-height="300" data-default-tab="css" data-slug-hash="xbbYMBj" data-pen-title="Untitled" data-user="pgm-lukaverv" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+                            <span>See the Pen <a href="https://codepen.io/pgm-lukaverv/pen/xbbYMBj">
+                            Untitled</a> by LukasVervaet (<a href="https://codepen.io/pgm-lukaverv">@pgm-lukaverv</a>)
+                            on <a href="https://codepen.io">CodePen</a>.</span>
+                            <script async src="https://public.codepenassets.com/embed/index.js"></script>
+                        </p>
+                        <p>
+                            nu zouden alle songs mooi naast elkaar moeten staan en zou elke song in een kadertje moeten staan.
+                        </p>
+                    </section>
                 </article>
             </details>
             <details>
@@ -149,11 +214,45 @@
                     <header>
                         <h3>Javascript</h3>
                     </header>
-                    <p>Details for step 4...</p>
+                    <h4>4.1</h4>
+                    <section>
+                        <p>
+                            Javascript is een codetaal die wordt gebruikt om de functionaliteit van je web-pagina te bepalen.
+                            Javascript kan je gebruiken om knoppen, sliders, en nog veel meer te maken.
+                            In ons geval gaan we Javascript gebruiken om onze audio-bestanden af te spelen.
+                        </p>
+                        <p>
+                            Om Javascript toe te voegen aan je HTML bestand moet je eerst een JS bestand aanmaken in je JS folder, noem dit "main.js".
+                            Link vervolgens dit bestand in je HTML bestand door de volgende code toe te voegen net boven je sluitende body tag:
+                            <img src="assets/images/linkJS.png" alt="link js">
+                        </p>
+                        <p>
+                            We gaan eerst testen of onze JS goed is gelinkt met onze HTML,
+                            dit kun je doen door een console.log toe te voegen in je main.js bestand:
+                            <img src="assets/images/helloworld.png" alt="hello world">
+                        </p>
+                        <p>
+                            Klik dan rechtermuisklik op je web-pagina en klik op "inspecteren" of "inspect" en ga naar de console tab.
+                            Als je "Hello World!" ziet staan in de console, is je JS goed gelinkt.
+                        </p>
+                    </section>
+                    <h4>4.2</h4>
+                    <section>
+                        <p>
+                            In javascript werken we ook met variabelen, we kunnne data uit onze html halen door de juiste elementen te selecteren.
+                            In ons geval gaan we de play en pause knoppen selecteren en de audio tag.
+                        </p>
+                        <p>
+                            Een variabele kan je aanmaken door "let" of "const" te gebruiken, dit is een keyword dat je gebruikt om een variabele aan te maken.
+                            Aangezien wij 3 elementen hebben gaan we 3 variabelen aanmaken.
+                            Dit doe je door de volgende code toe te voegen in je main.js bestand:
+                        </p>
+                        
+                    </section>
                 </article>
             </details>
             <details>
-                <summary>Stap 5: Server opzetten</summary>
+                <summary>(Excelleren) Stap 5: Server opzetten</summary>
                 <article>
                     <header>
                         <h3>Server opzetten</h3>
